@@ -14,10 +14,10 @@ node{
   stage('step2'){
     sshScript remote: remote, script: "ruksana_24.sh"
   }
-  stage('step2'){
+  stage('step3'){
     sshcommand remote: remote,command: "pwd"
   }
-  stage('step3'){
-    sshRemove remote:remote,path:"/home/opc/ruksana_24.sh"
+  stage('step4'){
+    sshRemove remote: remote, path: "/home/opc/ruksana_24.sh"
   }
 }
