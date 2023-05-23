@@ -1,7 +1,4 @@
-#!/bin/sh
-cd/home/opc/
-mkdir ruksana_24.sh
-/home/opc/ruksana_24.sh
+
 node{
   def remote = [:]
   remote.name = 'oraclevm'
