@@ -12,11 +12,12 @@ node{
     sshput remote:remote, from: 'ruksana_24.sh', into:'/home/opc'
   }
   stage('step2'){
-    sshccommand remote:remote, command: "sudo sh /home/opc/ruksana_24.sh"
+    sshScript remote: remote, script: "ruksana_24.sh"
   }
   stage('step2'){
-    sshcommand remote:remote,command:"pwd"
+    sshcommand remote: remote,command: "pwd"
   }
-  stage('step2'){
-    sshcommand remote:remote,command: "/home/opc/ruksana_24"
+  stage('step3'){
+    sshRemove remote:remote,path:"/home/opc/ruksana_24.sh"
+  }
 }
