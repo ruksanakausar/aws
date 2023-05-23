@@ -18,6 +18,6 @@ node{
  sshCommand remote: remote, command: "pwd"
  }
   stage('step4'){
- sshRemove remote: remote, path: "rm -rf /home/opc/ruksana_24.sh"
+ sshRemove remote: remote, path: "/home/opc/ruksana_24.sh"
  }
 }
