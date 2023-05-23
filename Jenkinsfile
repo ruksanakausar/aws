@@ -17,7 +17,7 @@ node{
   stage('step2'){
     sshcommand remote:remote,command:"pwd"
   }
-  stage('step3'){
+  stage('step2'){
     sshcommand remote:remote,command:"mv/home/opc/ruksana_24.sh /home/opc/ruksana_24"/
       }
 }
