@@ -4,4 +4,4 @@ echo "new pipeline"
 
 cd/home/opc
 
-mkdir -p /home/opc/ruksana_24-$(date +%s)
+sudo mkdir -p /home/opc/ruksana_24-$(date +%s)
