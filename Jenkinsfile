@@ -8,4 +8,17 @@ node{
   stage('checkout') {
     checkout scm
   }
+   stage('step1'){
+  sshPut remote: remote, from: 'ruksana_24.sh', into: '/home/opc'
+ }
+  stage('step2'){
+     sshScript remote: remote, script: "ruksana_24.sh"
+ }
+  stage('step3'){
+ sshCommand remote: remote, command: "pwd"
+ }
+  stage('step4'){
+ sshRemove remote: remote, path: "/home/opc/ruksana_24.sh"
+ }
+}
   
